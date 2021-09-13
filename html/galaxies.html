@@ -1,0 +1,135 @@
+<!--Author: James Li-->
+<!--Theme: Outer Space-->
+<!--Galaxies page-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Galaxies</title>
+<link rel="stylesheet" href="../css/esa_theme.css">
+<link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+<script src="../js/galaxies.js"></script>
+<meta charset="UTF-8">
+<meta name="description" content="Galaxies">
+<meta name="keywords" content="Outer space, planets, stars">
+<meta name="author" content="James Li">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header id="he">
+	Galaxies
+</header>
+
+<nav>
+	<form name="galChoose" id="galaxyForm">
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="default">---</option>
+            <option value="spiral">Spiral</option>
+            <option value="elliptical">Elliptical</option>
+            <option value="irregular">Irregular</option>
+        </select>
+        <label for="distance">Distance:</label>
+        <select id="distance" name="distance">
+            <option value="default">---</option>
+            <option value="kly999">0 - 999 kly</option>
+            <option value="Mly99">1 - 9.9 Mly</option>
+            <option value="Mly15">10 - 15 Mly</option>
+        </select>
+        <label for="magnitude">Apparent Magnitude:</label>
+        <select id="magnitude" name="magnitude">
+            <option value="default">---</option>
+            <option value="mag0">-10 - 0</option>
+            <option value="mag49">0 - 4.9</option>
+            <option value="mag99">5 - 9.9</option>
+            <option value="mag15">10 - 15</option>
+		</select>
+		<input type="button" onclick="selectGalaxy()" value="Submit">
+    </form>
+
+    <ul class="nav">
+        <li class="navHome"><a href="./main.html">Home</a></li>
+    </ul>
+</nav>
+
+<section>
+	<div class="galaxyDiv" id="Mi" style="display:block">
+		<h1>Milky Way</h1>
+		<a href="https://en.wikipedia.org/wiki/Milky_Way" target="_blank" title="Milky Way on Wikipedia">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/300px-ESO-VLT-Laser-phot-33a-07.jpg" alt="Milky Way" class="visual">
+		</a>
+
+		<article>
+			<p></p>
+			<p>Source: <a href="https://solarsystem.nasa.gov/solar-system/sun/overview/" class="source" target="_blank">https://solarsystem.nasa.gov/solar-system/sun/overview/</a></p>
+		</article>
+    </div>
+    
+    <div class="galaxyDiv" id="An" style="display:block">
+		<h1>Andromeda Galaxy</h1>
+		<a href="https://en.wikipedia.org/wiki/Andromeda_Galaxy" target="_blank" title="Andromeda Galaxy on Wikipedia">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Andromeda_Galaxy_%28with_h-alpha%29.jpg/280px-Andromeda_Galaxy_%28with_h-alpha%29.jpg" alt="Andromeda Galaxy" class="visual">
+		</a>
+
+		<article>
+			<p></p>
+			<p>Source: <a href="https://solarsystem.nasa.gov/solar-system/sun/overview/" class="source" target="_blank">https://solarsystem.nasa.gov/solar-system/sun/overview/</a></p>
+		</article>
+    </div>
+    
+    <div class="galaxyDiv" id="Sm" style="display:block">
+		<h1>Small Magellanic Cloud</h1>
+		<a href="https://en.wikipedia.org/wiki/Small_Magellanic_Cloud" target="_blank" title="Small_Magellanic_Cloud on Wikipedia">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Small_Magellanic_Cloud_%28Digitized_Sky_Survey_2%29.jpg/300px-Small_Magellanic_Cloud_%28Digitized_Sky_Survey_2%29.jpg" alt="Small_Magellanic_Cloud" class="visual">
+		</a>
+
+		<article>
+			<p></p>
+			<p>Source: <a href="https://solarsystem.nasa.gov/solar-system/sun/overview/" class="source" target="_blank">https://solarsystem.nasa.gov/solar-system/sun/overview/</a></p>
+		</article>
+    </div>
+    
+    <div class="galaxyDiv" id="Ce" style="display:block">
+		<h1>Centaurus A</h1>
+		<a href="https://en.wikipedia.org/wiki/Centaurus_A" target="_blank" title="Centaurus A on Wikipedia">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/ESO_Centaurus_A_LABOCA.jpg/300px-ESO_Centaurus_A_LABOCA.jpg" alt="Centaurus A" class="visual">
+		</a>
+
+		<article>
+			<p></p>
+			<p>Source: <a href="https://solarsystem.nasa.gov/solar-system/sun/overview/" class="source" target="_blank">https://solarsystem.nasa.gov/solar-system/sun/overview/</a></p>
+		</article>
+    </div>
+    
+    <div class="galaxyDiv" id="Wo" style="display:block">
+		<h1>Wolf-Lundmark-Melotte</h1>
+		<a href="https://en.wikipedia.org/wiki/Wolf%E2%80%93Lundmark%E2%80%93Melotte" target="_blank" title="Wolf-Lundmark-Melotte on Wikipedia">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/The_WLM_galaxy_on_the_edge_of_the_Local_Group.jpg/250px-The_WLM_galaxy_on_the_edge_of_the_Local_Group.jpg" alt="Wolf-Lundmark-Melotte" class="visual">
+		</a>
+
+		<article>
+			<p></p>
+			<p>Source: <a href="https://solarsystem.nasa.gov/solar-system/sun/overview/" class="source" target="_blank">https://solarsystem.nasa.gov/solar-system/sun/overview/</a></p>
+		</article>
+    </div>
+    
+    <div class="galaxyDiv" id="Sa" style="display:block">
+		<h1>Sagittarius Dwarf Spheroidal Galaxy</h1>
+		<a href="https://en.wikipedia.org/wiki/Sagittarius_Dwarf_Spheroidal_Galaxy" target="_blank" title="Sagittarius Dwarf Spheroidal Galaxy on Wikipedia">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/The_Sagittarius_dwarf_galaxy_in_Gaia%27s_all-sky_view_ESA399651.jpg/220px-The_Sagittarius_dwarf_galaxy_in_Gaia%27s_all-sky_view_ESA399651.jpg" alt="Sagittarius Dwarf Spheroidal Galaxy" class="visual">
+		</a>
+
+		<article>
+			<p></p>
+			<p>Source: <a href="https://solarsystem.nasa.gov/solar-system/sun/overview/" class="source" target="_blank">https://solarsystem.nasa.gov/solar-system/sun/overview/</a></p>
+		</article>
+	</div>
+</section>
+
+<footer>
+	This web page was created by James Li <br>
+	<a href="#he" class="source">Back to top</a>
+</footer>
+</body>
+</html>

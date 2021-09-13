@@ -1,0 +1,299 @@
+/* for this next week, please extend your webpage content, functionality and use external css and create a minimum of 3 variations of look and feel. have fun and see how far you can change the web page and its contents using only CSS. Make sure you maintain the usability of the website in this task--> */
+
+* {
+	box-sizing: border-box;
+	font-family: 'Barlow Condensed';
+}
+h1 {
+	text-align: center;
+	background-color: #003247;
+	color: white;
+	padding: 10px;
+	font-size: 35px;
+	text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 5px solid rgb(65, 126, 131);
+    text-transform: uppercase;
+}
+h2{
+	color: #003247;
+	text-align: center;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+p {
+	color: black;
+	text-align: left;
+	font-size: 20px;
+	margin: 10px;
+}
+header {
+	padding: 25px;
+	text-align: center;
+	font-size: 70px;
+    color: #E8E8E4;
+    background-color: #003247;
+    border-bottom: 5px solid rgb(65, 126, 131);
+    text-transform: uppercase;
+	letter-spacing: 20px;
+	text-decoration: none;
+}
+body {
+	background-color: #E8E8E4;
+}
+.mainBody { 
+	background-color: black;
+}
+nav {
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+}
+.nav {
+	font-size: 18px;
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	overflow: hidden; 
+	background-color: #003247;
+}
+.nav li{
+	display: inline-block;
+}
+.nav a{
+	display:  inline-block;
+	color: white;
+	background-color: #003247;
+  	text-align: center;
+  	padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-bottom: 5px solid #003247;
+}
+.nav a:hover{
+    border-bottom: 5px solid rgb(65, 126, 131);
+}
+/* .nav .current {
+	background-color: rgb(65, 126, 131);
+	border-bottom: 5px solid rgb(65, 126, 131);
+} */
+.navHome {
+	font-size: 18px;
+	float: right;
+}
+.navHome a{
+	display: inline-block;
+	color: white;
+	background-color: rgb(65, 126, 131);
+  	text-align: center;
+  	padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-bottom: 5px solid rgb(65, 126, 131);
+}
+.navHome a:hover{
+	background-color: rgb(63, 63, 63);
+	border-bottom: 5px solid rgb(63, 63, 63);
+}
+/* article {
+	float: left;
+	padding: 20px;
+  	width: 100%; 
+    background-color: #E8E8E4;
+} */
+form {
+	background-color: transparent;
+	text-align: center;
+	padding: 0;
+}
+#galaxyForm {
+	background-color: #003247;
+	text-align: center;
+	padding: 10px;
+}
+section:after {
+	content: "";
+  	display: table;
+    clear: both;
+}
+.starDiv {
+	background-color: transparent;
+	display: none;
+}
+.galaxyDiv {
+	background-color: transparent;
+}
+.galaxyButtonDiv {
+	background-color: #003247;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.galaxyButton {
+	background-color: white;
+	color: black;
+	font-size: 18px;
+	padding: 2px 2px 2px 2px;
+	margin: 0;
+	width: 5%;
+}
+article {
+	overflow: hidden;
+	min-width: 200px;
+    margin: 20px 225px 20px 225px;
+    background-color: rgb(199, 199, 199);
+    border-left: 5px solid #003247;
+}
+footer {
+	background-color: rgb(199, 199, 199);
+  	padding: 10px;
+  	text-align: center;
+  	color: black;
+}
+table {
+    margin: 20px auto 20px auto;
+}
+table, th, td {
+	border: 0px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 15px;
+	text-align: center;
+}
+tr:nth-child(even) {
+	background-color: white;
+}
+tr:nth-child(odd) {
+    background-color: #003247;
+    color: white;
+}
+/* @media (max-width: 800px) {
+    nav, .nav a, .navHome a{
+        width: 100%;
+		float: none;
+        position: static;
+	}
+	.nav a:hover {
+		background-color: rgb(65, 126, 131);
+		border-bottom: 5px solid rgb(65, 126, 131);
+	}
+	div {
+		overflow: hidden;
+		min-width: 200px;
+		margin: 20px 20px 20px 20px;
+		background-color: rgb(199, 199, 199);
+		border-left: 5px solid #003247;
+	}
+} */
+label {
+	color: white;
+}
+.mainSearch {
+	width: 30%;
+	padding: 12px 20px;
+	margin: 0;
+	display: inline-block;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: white;
+	background-color: rgba(255, 255, 255, 0.459);
+	font-size: 30px;
+}
+.mainSearch::placeholder {
+	color: rgba(255, 255, 255, 0.541);
+}
+#mainButton {
+	width: 10%;
+	background-color: rgb(65, 126, 131);
+	color: white;
+	padding: 12px 10px 12px 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 30px;
+}
+.headerMain {
+	padding: 60px 20px 60px 20px;
+	text-align: center;
+	font-size: 95px;
+    color: #E8E8E4;
+    background-image: url('https://wallpaperset.com/w/full/9/6/6/185826.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	background-attachment: fixed;
+    border-bottom: 5px solid rgb(65, 126, 131);
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+.NavMain{
+	background: black;
+    padding: 0px;
+	text-transform: uppercase;
+	position: static;
+	top: 0;
+}
+.NavMain ul {
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+    overflow: hidden; 
+}
+.navMain {
+	float: left;
+	font-size: 18px;
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+    background-attachment: static;
+}
+.navMain a:link, .navMain a:visited {
+	padding: 212px;
+	display: inline-block;
+  	color: transparent;
+  	text-align: center;
+    text-decoration: none;
+}
+.navMain a:hover, .navMain a:active{
+	background-color: rgba(255, 255, 255, 0.507);
+	color: black;
+}
+.map {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.visual {
+	display: block;
+	height: 250px;
+	margin: 20px auto 20px auto;
+}
+.source:link, .source:visited {
+	color: #003247;
+	background-color: transparent;
+	text-decoration: none;
+}
+.source:active, .source:hover {
+	color: #00405c;
+	background-color: transparent;
+	text-decoration: underline;
+}
+.starHeader {
+	width: 30%;
+	padding: 12px 20px;
+	margin: 10px auto 10px auto;
+	display: block;
+	box-sizing: border-box;
+}
+.starImage {
+	width: 30%;
+	padding: 12px 20px;
+	margin: 10px auto 10px auto;
+	display: block;
+	box-sizing: border-box;
+}
+.starBody {
+	width: 30%;
+	padding: 12px 20px;
+	margin: 10px auto 10px auto;
+	display: block;
+	box-sizing: border-box;
+}

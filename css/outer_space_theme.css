@@ -1,0 +1,139 @@
+/* for this next week, please extend your webpage content, functionality and use external css and create a minimum of 3 variations of look and feel. have fun and see how far you can change the web page and its contents using only CSS. Make sure you maintain the usability of the website in this task--> */
+
+* {
+	box-sizing: border-box;
+}
+h1 {
+	color: #ffffff;
+	padding: 15px;
+}
+h2 {
+	color: #ffffff;
+	padding: 15px;
+	font-size: 20px;
+}
+p {
+	color: white;
+}
+header {
+	padding: 100px;
+	text-align: center;
+	font-size: 70px;
+	color: white;
+	background-image: url('https://wallpaperset.com/w/full/9/6/6/185826.jpg'); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	background-attachment: fixed;
+	font-weight: bold;
+}
+body {
+	background-color: black;
+}
+footer {
+	background-color: #777;
+  	padding: 10px;
+  	text-align: center;
+  	color: white;
+}
+table {
+	margin: 20px auto 20px auto;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 15px;
+	text-align: center;
+}
+th {
+	background-color: #444;
+	color: white;
+}
+tr:nth-child(even) {
+	background-color: #eee;
+}
+tr:nth-child(odd) {
+	background-color: #fff;
+}
+nav {
+	float: left;
+	width: 15%;
+	background: #444;
+	padding: 20px;
+	position: sticky;
+  	top: 0;
+}
+nav ul {
+  	list-style-type: none;
+  	padding: 0;
+	text-align: center;
+	font-size: 15px;
+}
+article {
+	float: right;
+	padding: 20px;
+  	width: 85%;
+  	background-color: #000;
+}
+section:after {
+	content: "";
+  	display: table;
+  	clear: both;
+}
+div {
+	overflow: hidden;
+	min-width: 200px;
+	text-align: justify;
+}
+@media (max-width: 900px) {
+  	nav, article {
+    		width: 100%;
+			height: auto;
+			position: static;
+  	}
+}
+.nav a:link, .nav a:visited {
+	color: white;
+	background-color: #444;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+.nav a:hover, .nav a:active{
+	color: white;
+	background-color: #333;
+}
+.section {
+	background-color: #444;
+	color: white;
+	padding: 10px;
+	font-size: 35px;
+	text-align: center;
+}
+.map {
+	display: block;
+  	margin-left: auto;
+	margin-right: auto;
+}
+.visual {
+	width: 288.8571428571429px;
+	height: 275.7142857142857px;
+	float: left;
+	margin: 0px 12px 3px 0px;
+}
+.source:link, .source:visited, .source:hover {
+	color: #88d;
+	background-color: transparent;
+	text-decoration: none;
+}
+.source:active {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+
+
